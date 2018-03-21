@@ -1,0 +1,361 @@
+@charset "utf-8";
+a {
+	color: #000;
+	list-style: none;
+	font-style: normal;
+}
+
+a:hover {
+	color: #000;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	color: #000;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+
+/**/
+
+.border-c {
+	border-bottom: 1px solid #ccc;
+}
+
+.border-d {
+	border-bottom: 1px solid #ededed;
+}
+
+.bag-w {
+	background: #fff;
+}
+
+.magin-top {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.list1 {
+	padding-bottom: 10px;
+	border-bottom: 3px solid #cc0000;
+}
+.banner1-img {
+	width: 100%;
+}
+
+.banner1-img img {
+	width: 100%;
+}
+
+.ad-text {
+	font-size: 14px;
+	border-left: 1px solid #999999;
+}
+
+.banner1-txt {
+	border-bottom: 1px solid #e4e4e4;
+	padding: 5px 0 5px 0;
+}
+
+.ad-title {
+	font-size: 14px;
+}
+
+.new-book {
+	font-size: 14px;
+	width: 100%;
+}
+
+.new-book-titil {
+	padding: 20px 0 20px 0;
+}
+
+.img-h {
+	border: none;
+	height: 100px;
+}
+
+.img-h img {
+	height: 100%;
+}
+
+.am-g img {
+	width: 100%;
+}
+
+del,
+ins {
+	text-decoration: line-through;
+}
+
+.moer {
+	background: url(../img/more.jpg) no-repeat;
+	background-size: 100%;
+}
+
+.moer h2 {
+	margin: 65px 0 25px 0;
+}
+
+.moer em {
+	padding: 25px 0 50px 0;
+	text-align: center;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/jiantou.png)no-repeat;
+	background-size: 100%;
+}
+
+
+/*超出隐藏*/
+
+.new-book-list li p {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/*人气推荐*/
+
+.bgcolor-c {
+	padding-bottom: 10px;
+	background: #ededed;
+}
+
+
+/*top*/
+
+.hot-top {
+	padding: 15px 0 15px 0;
+}
+
+.return {
+	margin-left: 15px;
+}
+
+.hot-top-titile {
+	font-weight: normal;
+	width: 80%;
+}
+
+
+/*详情页轮播图*/
+
+.tututu {
+	width: 100%;
+	margin: -25px 0 0 0;
+}
+
+.swiper-wrapper {
+	width: 100%;
+}
+
+.swiper-slide img {
+	margin-left: -1px;
+	width: 100%;
+}
+
+.swiper-pagination-bullet {
+	background: #ccc;
+}
+
+.carousel {
+	position: relative;
+}
+
+.top-position {
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+	top: 20px;
+}
+
+.icon-img {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background: url(../img/return.png)no-repeat;
+	background-size: 100%;
+}
+
+.color-r {
+	color: red;
+}
+
+.newicon {
+	width: 21px;
+	height: 21px;
+	display: inline-block;
+	background: url(../img/newicon.png)no-repeat;
+	background-size: 100%;
+}
+
+.border-all-c {
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
+.bag-c {
+	background: #ededed;
+}
+
+.overflow {
+	width: 95%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.border-rigth-c {
+	border-right: 1px solid #ccc;
+}
+
+.width_15 {
+	width: 15%;
+}
+
+.width_35 {
+	width: 35%;
+}
+
+.bg-j {
+	background: #ff6600;
+}
+
+.bg-r {
+	background: red;
+}
+
+.color-w {
+	color: #fff;
+}
+
+
+/*图文详情的轮播图*/
+
+.return {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/return.png) no-repeat;
+	background-size: 100%;
+}
+
+.width_5 {
+	width: 5%;
+}
+
+.width_80 {
+	width: 80%;
+}
+
+.color-6 {
+	color: #666;
+}
+
+.ad-img {
+	width: 100%;
+}
+
+.ad-img img {
+	width: 100%;
+}
+
+.bag-b {
+	background: #363837;
+}
+
+.width_70 {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.width_70 img {
+	width: 100%;
+}
+
+.am-u-sm-4 p {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/*商品规格*/
+
+.guige {
+	display: none;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.width_30 {
+	width: 30%;
+}
+
+.am-u-sm-3 img {
+	width: 100%;
+}
+
+.width_10 {
+	width: 10%;
+}
+
+.num {
+	width: 20%;
+}
+
+.bag-n {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+.width_33 {
+	width: 33.33%;
+}
+
+.border-r {
+	border-right: 1px solid #ccc;
+}
+
+.border-l {
+	border-left: 1px solid #ccc;
+}
+
+
+/*加减的样式*/
+.border-color-r{
+	border-color: red;
+}
+/*评价的css样式*/
+.width_50{
+	width: 50%;
+}
+.touxiang img{
+	width: 100%;
+}

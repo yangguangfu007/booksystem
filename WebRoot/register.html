@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="AmazeUI/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/amazeui.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/landing.css" />
+		<title>注册页面</title>
+	</head>
+
+	<body>
+		<div class="cuntent am-text-center padding-top">
+			<div class="top am-center"></div>
+			<div class="am-padding">
+				<a href="#" class="color-f am-text-lg am-padding-bottom">现在注册</a>
+				<form action="UserAction_register" class="am-form" data-am-validator>
+					<fieldset>
+						<div class="am-form-group zhuce am-padding">
+							<input type="text" id="doc-vld-528" 
+							name="user.username" class="js-pattern-mobile" placeholder="输入手机号" required/>
+							<!-- <p>我们会给你发送一个验证码</p> -->
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="am-form-group am-padding-horizontal">
+							<input type="password" id="doc-vld-pwd-1" name="user.userpass"
+							 placeholder="请设置6位数密码" pattern="^\d{6}$" required/>
+						</div>
+						<div class="am-form-group am-padding-horizontal">
+							<input type="password" id="doc-vld-pwd-2" 
+							name="userpass1" placeholder="确认密码" data-equal-to="#doc-vld-pwd-1" required/>
+						</div>
+						<div class="am-padding am-margin">
+					    <input type="submit" class="color-f am-margin-vertical-sm" value="提交"/>
+						</div>
+					</fieldset>
+				</form>
+				<div class="qingdeglu">
+					<span>已有账号？请<a href="landing1.jsp" class="color-f">登录</a></span>
+				</div>
+				<div class="am-padding">
+					<span>/</span>
+				</div>
+				<div class="other">
+					<p><span>~</span>其他登录方式<span>~</span></p>
+					<div class="am-g">
+						<a href="" class="am-u-sm-4 am-text-center am-text-xl"><span class="am-icon-qq"></span></a>
+						<a href="" class="am-u-sm-4 am-text-center am-text-xl"><span class="am-icon-weibo"></span></a>
+						<a href="" class="am-u-sm-4 am-text-center am-text-xl"><span class="am-icon-weixin"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

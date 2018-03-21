@@ -1,0 +1,68 @@
+@charset "utf-8";
+.bag-c{
+	background: #ededed;
+}
+.border-ru{
+	padding: 10px;
+}
+/*侧边选项卡的css*/
+ol,ul,dl,li,dt,dd{
+	list-style:none;
+}
+
+.current2{
+	color:#b4282d;
+	border-left:2px solid #b4282d;
+}
+.am-g{
+	max-width:1000px;
+}
+.fl-nav{
+	min-height: 600px;
+}
+.fl-nav li{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+	cursor:pointer;
+}
+.xuanxiangka{
+	position:relative;
+}
+.fl-left{
+	position:absolute;
+	top:0;
+	right:0;
+	border-left:1px solid lightgray;
+	background:#fff;
+}
+.border-top{
+	border-top: 1px solid #ccc;
+}
+.border-rigth{
+	border-right: 1px solid #ccc;
+}
+/*选项卡内容*/
+.width_33{
+	width: 33%;
+}
+.fl-left-top{
+	height: 150px;
+}
+.fl-left-top img{
+	height: 100%;
+	width: 100%;
+}
+.fl-left-box li{
+	height: 100px;
+}
+.fl-left-nav{
+	margin: 0 auto;
+	width:60%;
+}
+.fl-left-nav img{
+	width: 100%;
+}
+.width_70{
+	width: 70%;
+}

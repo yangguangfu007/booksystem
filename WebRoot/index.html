@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="AmazeUI/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/amazeui.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/foot.css" />
+		<title>鲜书网首页推荐</title>
+	</head>
+
+	<body>
+		<div class="cuntent am-center">
+			<div class="top width_full am-cf am-padding-top-sm">
+				<div class="logo am-text-middle am-fl">
+					<a href="landing1.html">
+						<em><img style="width: 25px; height: 25px;" src="img/logo.png"/></em>
+						<span class="fontsize-15 am-text-middle">鲜书</span>
+					</a>
+				</div>
+				<div class="selected am-text-center am-fl">
+					<a class="" href="select.html">
+						<em></em>
+						<input type="text" name="" id="" value="" placeholder="搜索好书" />
+					</a>
+				</div>
+			</div>
+			<!--以上是头部-->
+			<!--推荐的主体-->
+			<!--导航栏-->
+			<ul class="list am-cf am-center">
+				<li class="list1 am-fl">
+					<a href="#" class="color-r">推荐</a>
+				</li>
+				<li class="list2 am-fl">
+					<a href="literatureart.html">文艺</a>
+				</li>
+				<li class="list3 am-fl">
+					<a href="booklist.html">书单</a>
+				</li>
+				<li class="list4 am-fl">
+					<a href="eatfood.html">谈吃</a>
+				</li>
+			</ul>
+			<!--轮播图-->
+			<div class="banner1">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/banner1.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/shouyebanner.jpg"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/shouyebanner-3.jpg"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/shouyebanner-4.jpg"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/shouyebanner-5.jpg"/></a>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--轮播图的js-->
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						spaceBetween: 30,
+					});
+				</script>
+				<!--轮播图结束-->
+				<div class="am-g banner1-txt">
+					<h2 class="ad-title am-u-sm-3 color-b">鲜书Lief</h3>
+					<span class="ad-text am-u-sm-9">最美阅读：不可错过的文艺书单</span>
+				</div>
+			</div>
+			<!--新书发布-->
+			<div class="new-book">
+				<h1 class=" am-text-center new-book-titil"><a class="color-b" href="newbook.html">新书 · 首发    ></a></h1>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center">
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/yuetongduhe.jpg" />
+						</div>
+						<p>月童渡河</p>
+						<span class="color-r">¥32.80</span>
+					</a>
+				  </li>
+				   <li>
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  		<img class="" src="img/zizaiduxing.jpg" />
+					</div>
+					<p>自在独行</p>
+					<span class="color-r">¥32.80</span>
+				  	</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center">
+				  <li>
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  		<img class="" src="img/dunganli.jpg" />
+					</div>
+					<p>钝感力（日）</p>
+					<span class="color-r">¥44.80</span>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/yishengqianan.jpg" />
+						</div>
+						<p>一生欠安</p>
+						<span class="color-r">¥32.80</span>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c"></p>
+			</div>
+			<!--人气推荐-->
+			<div class="tuijian">
+				<h1 class=" am-text-center new-book-titil border-c"><a class="color-b" href="renqituijian.html">人气推荐&nbsp; &nbsp;   ></a></h1>
+				<div class="am-g magin-top ad-title border-d">
+				 <a href="detailpage2.html">
+				 	 <div class="am-u-sm-4">
+				  	<img src="img/quanshijie.jpg"/>
+				  </div>
+				  <div class="am-u-sm-8">
+				  	<h4 class="color-b">从你的全世界路过（影版）</h4>
+				  	<p>近二十年华语小说的销量奇迹，每个故事都在变成电影，每一分钟，都有人看到自己。</p>
+				  	<span class="color-r">￥24.50</span>
+				  	<del>￥36.00</del>
+				  </div>
+				 </a>
+				</div>
+				<div class="am-g magin-top ad-title border-d">
+				 <a href="detailpage2.html">
+				 	 <div class="am-u-sm-4">
+				  	<img src="img/haomahaode.jpg"/>
+				  </div>
+				  <div class="am-u-sm-8">
+				  	<h4 class="color-b">好吗好的</h4>
+				  	<p>平行世界，多元生活，既可以朝九晚五，又能够浪迹天涯。好吗好的</p>
+				  	<span class="color-r">￥23.40</span>
+				  	<del>￥39.00</del>
+				  </div>
+				 </a>
+				</div>
+				<div class="am-g magin-top ad-title border-d">
+				 <a href="detailpage2.html">
+				 	 <div class="am-u-sm-4">
+				  	<img src="img/baiyexing.jpg"/>
+				  </div>
+				  <div class="am-u-sm-8">
+				  	<h4 class="color-b">白夜行</h4>
+				  	<p>东野圭吾万千书迷心中的无冕之王，精装典藏版。绝望的念想，悲恸的守望。</p>
+				  	<span class="color-r">￥24.50</span>
+				  	<del>￥36.00</del>
+				  </div>
+				 </a>
+				</div>
+				<p class="bag-c"></p>
+			</div>
+			<!--文学艺术-->
+			<div class="new-book">
+				<h1 class=" am-text-center new-book-titil border-c"><a class="color-b" href="#">文学 · 艺术</a></h1>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-d">
+				  <li>
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  		<img class="" src="img/atail.jpg" />
+					</div>
+					<p>阿勒泰的角落</p>
+					<span class="color-r">¥30.60</span>
+					<del>￥36.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/gaobai9.jpg" />
+						</div>
+						<p>韩寒：告白与告别</p>
+						<span class="color-r">¥24.50</span>
+						<del>￥32.80</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-d">
+				  <li>
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/one.jpg" />
+						</div>
+						<p>ONE一个·一套</p>
+						<span class="color-r">¥224</span>
+						<del>￥280</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/songci.jpg" />
+						</div>
+						<p>宋词背后的秘密</p>
+						<span class="color-r">¥27.00</span>
+						<del>￥36.00</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-d">
+				  <li>
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/jiye.jpg" />
+						</div>
+						<p>厚积落叶听雨声</p>
+						<span class="color-r">¥28.70</span>
+						<del>￥39.00</del>
+				  	</a>
+				  </li>
+				  <li class="moer am-text-center">
+					<a href="detailpage2.html">
+						<h2 class="color-b">更多文学·艺术书籍</h3>
+						<em></em>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c border-d"></p>
+			</div>
+			<!--底部-->
+			<ul class="footer am-cf  am-text-center">
+				<li class="footer1 footerlist color-r">
+					<span class="am-icon-home am-icon-md"></span>
+					<em>首页</em>
+				</li>
+				<li class="footer2 footerlist">
+					<a href="Life.html">
+						<span class="am-icon-yelp am-icon-md"></span>
+						<em>Life</em>
+					</a>
+				</li>
+				<li class="footer3 footerlist">
+					<a href="classify.html">
+						<span class="am-icon-lemon-o am-icon-md"></span>
+						<em>分类</em>
+					</a>
+				</li>
+				<li class="footer4 footerlist">
+					<a href="shopingcar.html">
+						<span class="am-icon-shopping-cart am-icon-md"></span>
+						<em>购物车</em>
+					</a>
+				</li>
+				<li class="footer5 footerlist">
+					<a href="register.html">
+						<span class="am-icon-user am-icon-md"></span>
+						<em>个人</em>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</body>
+</html>

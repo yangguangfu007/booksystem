@@ -1,0 +1,74 @@
+@charset "utf-8";
+.cuntent{
+	min-height: 700px;
+}
+/*span{display: inline-block;}*/
+.width_100{
+	width: 100%;
+}
+.width_90{
+	width: 90%;
+}
+.border-bottom-d{
+	border-bottom: 1px solid #ccc;
+}
+.width_33{
+	width: 33.3%;
+}
+.width_40{
+	width: 40%;
+}
+.width_60{
+	width: 60%;
+}
+.magin-top{
+	margin-top: 40px;
+}
+.border-all-c{
+	border: 1px solid #ccc;
+}
+img{
+	width: 100%;
+}
+.input{
+	width: 30px;
+	border: none;
+}
+/*购物车*/
+.radius{
+	outline: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.in_put{
+	outline: none;
+	border: none;
+	width: 40px;
+}
+.shopcarfooter{
+	position: absolute;
+	bottom: -40px;
+}
+.goods{
+	position: relative;
+}
+/*底部*/
+.shopcarfooter{
+	width: 100%;
+}
+.bag-c{
+	background: #C7C7C7;
+}
+.fontsize-16{
+	font-size: 16px;
+}
+.fontsize-14{
+	font-size: 14px;
+}
+.color-b{
+	color: #000;
+}
+.left_img{
+	width: 60%;
+}

@@ -1,0 +1,194 @@
+@charset "utf-8";
+.personal-top {
+	position: relative;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+.headimg {
+	position: absolute;
+	top: 50px;
+}
+
+.width_20 {
+	width: 20%;
+}
+
+.bag-b {
+	background: #ccc;
+}
+.bag-w {
+	background: #fff;
+}
+
+.fontsize-16 {
+	font-size: 16px;
+}
+
+.border-bottom-d {
+	border-bottom: 1px solid #ccc;
+}
+
+.border-right-c {
+	border-right: 1px solid #ccc;
+}
+
+.display {
+	display: block;
+	width: 22px;
+	height: 22px;
+}
+
+.display1 {
+	background: url(../img/daifukuan.jpg)no-repeat;
+	background-size: 100%;
+}
+
+.display2 {
+	background: url(../img/daifahuo.jpg)no-repeat;
+	background-size: 100%;
+}
+
+.display3 {
+	background: url(../img/daishouhuo.jpg)no-repeat;
+	background-size: 100%;
+}
+
+.display4 {
+	background: url(../img/daopingjia.jpg)no-repeat;
+	background-size: 100%;
+}
+
+.youhuiquan {
+	background: url(../img/youhuiquanlogo.jpg)no-repeat;
+	background-size: 100%;
+}
+
+.kefu {
+	background: url(../img/kefu.jpg)no-repeat;
+	background-size: 100%;
+}
+
+.bangzhu {
+	background: url(../img/bangzhu.jpg)no-repeat;
+	background-size: 100%;
+}
+
+
+/*我的订单*/
+
+.left {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/return.png)no-repeat;
+	background-size: 100%;
+}
+
+
+/*选项卡*/
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.no_order {
+	text-align: center;
+	font-size: 14px;
+	color: #4F494B;
+	margin-top: 50px;
+}
+
+.no_order img {
+	width: 146px;
+}
+
+.txt {
+	margin-top: 20px;
+}
+
+.no_order a {
+	display: inline-block;
+	padding: 5px 30px;
+	background: #fff;
+	color: #E74C3C;
+	border: 1px solid #E6E6E6;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.tabs {
+	height: 40px;
+}
+
+.tabs a {
+	display: block;
+	float: left;
+	width: 20%;
+	color: #828282;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.tabs a.active {
+	color: #E74C3C;
+	;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid #E74C3C;
+}
+
+.swiper-container {
+	height: 325px;
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	border-top: 0;
+}
+
+.swiper-slide {
+	height: 325px;
+	width: 100%;
+	background: none;
+	color: #828282;
+}
+
+.content-slide {
+	padding: 40px;
+}
+
+.content-slide p {
+	text-indent: 2em;
+	line-height: 1.9;
+}
+.border-all-c{
+	border: 1px solid #ccc;
+}
+.min-hight{
+	min-height: 600px;
+}
+.cuntent{
+	width: 100%;
+	position: relative;
+}
+.tianjia{
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	margin-left: -39%;
+	bottom: 40px;
+}
+.tianjia input{
+	width: 100%;
+	color: #fff;
+	border: none;
+	background: #cc0000;
+}

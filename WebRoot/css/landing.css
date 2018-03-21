@@ -1,0 +1,49 @@
+@charset "utf-8";
+.cuntent{
+	width: 100%;
+	min-height: 600px;
+	background: url(../img/denglu-bg.jpg)no-repeat;
+	background-size: 100% 100%;
+}
+.top{
+	width: 50px;
+	height: 50px;
+	background: url(../img/logo.png)no-repeat;
+	background-size: 100%;
+}
+.padding-top{
+	padding-top: 100px;
+}
+.color-f{
+	color: #ff6600;
+}
+.zhuce{
+	width: 100%;
+}
+.zhuce input{
+	border: none;
+	width: 60%;
+	height: 50px;
+}
+.color-6{
+	color: #666;
+}
+.xiayibu{
+	display: block;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background: url(../img/xiayibu.jpg)no-repeat;
+	background-size: 100%;
+}
+.denglu{
+	display: block;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background: url(../img/denglu.jpg)no-repeat;
+	background-size: 100%;
+}
+.margin-top{
+	margin-top: 50px;
+}

@@ -1,0 +1,80 @@
+@charset "utf-8";
+.list2 {
+	padding-bottom: 10px;
+	border-bottom: 3px solid #cc0000;
+}
+.border-bottom-d{
+	border-bottom: 1px solid #ededed;
+}
+.border-rigth-d{
+	border-bottom: 1px solid #ededed;
+}
+.border-none{
+	border: none;
+}
+.banner2{
+	width: 100%;
+}
+.banner2 img{
+	width: 100%;
+}
+.text-top{
+	padding: 18px 0 8px 0;
+	border-bottom: 1px solid #ccc;
+}
+.text-top h3{
+	font-size: 16px;
+	font-weight: bolder;
+}
+.text-top p{
+	font-size: 16px;
+}
+
+/*超出隐藏*/
+.new-book-list li p{
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.new-book {
+	font-size: 14px;
+	width: 100%;
+}
+.img-h {
+	border: none;
+	height: 100px;
+}
+
+.img-h img {
+	height: 100%;
+}
+.new-book-list li{
+	border-right: 1px solid #ededed;
+}
+/*more*/
+.moer{
+	background: url(../img/more.jpg) no-repeat;
+	background-size: 100%;
+	
+}
+.moer h2{
+	margin: 65px 0 25px 0;
+}
+.moer em{
+	padding: 25px 0 50px 0;
+	text-align: center;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/jiantou.png)no-repeat;
+	background-size: 100%;
+}
+/*小说*/
+.am-u-sm-4 img{
+	height: 100%;
+	width: 100%;
+}
+.magazine h4{
+	font-size: 14px;
+}

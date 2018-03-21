@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+    <class name="User" table="Users">
+       <id name="userid" column="userid" type="java.lang.Integer">
+       		<generator class="sequence">
+       			<param name="sequence">seq_users_id</param>
+       		</generator>
+       </id>
+       <property name="username" column="username" type="java.lang.String"/>
+       <property name="userpass" column="userpass" type="java.lang.String"/>
+       <property name="userlimit" column="USERLIMIT" type="java.lang.Integer"/>
+       <set name="orders" inverse="true"><!-- 此处不用级联，因为用户刚登陆时没有订单可以保存，加不加级联根据业务需要 -->
+    	<key column="USERID"></key>
+    	<one-to-many class="T_order"/>
+       </set>
+    </class>
+</hibernate-mapping>

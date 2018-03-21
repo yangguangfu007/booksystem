@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Amaze UI</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="icon" type="image/png" href="i/favicon.png">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+
+	<body>
+		<p>
+			Hello Amaze UI.
+		</p>
+
+		<!--在这里编写你的代码-->
+		<div class="am-center">
+			垂直对齐的原理为把父容器内的 “幽灵”元素（使用伪元素）高度设置为 100%，再通过设置需要对齐的元素 vertical-align 属性实现（参考）。
+
+		</div>
+		<div class="am-vertical-align" style="height: 150px;">
+			<div class="am-vertical-align-middle">
+				飘在半空中的 XX
+			</div>
+			</sssdiv>
+		</div>
+		<div class="am-g doc-am-g">
+			<div class="am-u-sm-3 am-u-md-3 am-u-lg-3 am-padding-0">sm-6 mxsacweteytrujhjgngd-4 lg-3</div>
+			<div class="am-u-sm-3 am-u-md-3 am-u-lg-3">sm-6 md-8 lg-9</div>
+			<div class="am-u-sm-3 am-u-md-3 am-u-lg-3">sm-6 md-4 lg-3</div>
+			<div class="am-u-sm-3 am-u-md-3 am-u-lg-3"><img src="img/alim/alim1.jpg" class="am-img-responsive am-circle" /></div>
+		</div>
+
+		<!-- 隐藏了，Demo 里看不到按钮 -->
+		<button class="am-btn am-btn-danger am-hide">I'm hidden.....</button>
+		<!--[if (gte IE 9)|!(IE)]><!-->
+
+		<!--折叠面板-->
+
+		<div class="am-panel-group" id="accordion">
+			<div class="am-panel am-panel-default">
+				<div class="am-panel-hd">
+					<h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}">
+			      	  .2.
+			     	 </h4>
+				</div>
+				<div id="do-not-say-2" class="am-panel-collapse am-collapse">
+					<div class="am-panel-bd">
+						每个人都有一场爱恋， 用心、用情、用力，感动也感伤。 我把最炙热的心情 藏在那里。 你不懂我，我不怪你。 每个人都有 一行眼泪， 喝下的冰冷的水，酝酿成的热泪。 我把最心酸的委屈汇在那里。 你不懂我，我不怪你。 每个人都有一段告白， 忐忑、不安，却饱含真心和勇气。 我把最抒情的语言用在那里。 你不懂我，我不怪你。
+					</div>
+				</div>
+			</div>
+			<div class="am-panel am-panel-default">
+				<div class="am-panel-hd">
+					<h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">.3.</h4>
+				</div>
+				<div id="do-not-say-3" class="am-panel-collapse am-collapse">
+					<div class="am-panel-bd">
+						每个人都有一场爱恋， 用心、用情、用力，感动也感伤。 我把最炙热的心情 藏在那里。 你不懂我，我不怪你。 每个人都有 一行眼泪， 喝下的冰冷的水，酝酿成的热泪。 我把最心酸的委屈汇在那里。 你不懂我，我不怪你。 每个人都有一段告白， 忐忑、不安，却饱含真心和勇气。 我把最抒情的语言用在那里。 你不懂我，我不怪你。
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button data-am-modal="{target: '#my-alert'}" type="button" class="am-btn am-btn-warning" id="doc-confirm-toggle">
+  Confirm
+</button>
+
+		<div class="am-modalo am-modal-confirm" tabindex="-1" id="my-confirm">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">Amaze UI</div>
+				<div class="am-modal-bd">
+					你，确定要删除这条记录吗？
+				</div>
+				<div class="am-modal-footer">
+					<span class="am-modal-btn" data-am-modal-cancel>取消</span>
+					<span class="am-modal-btn" data-am-modal-confirm>确定</span>
+				</div>
+			</div>
+		</div>
+
+		<!--日历插件-->
+		<h1>飞机票预定</h1>
+		<div class="am-g">
+			<div class="am-u-sm-6">
+				起飞日期<br/>
+				<p><input type="text" class="am-form-field" placeholder="今天之前的日期被禁用" id="my-start-2" /></p>
+			</div>
+			<div class="am-u-sm-6">
+				返程日期日期<br/>
+				<p><input type="text" class="am-form-field" id="my-end-2" /></p>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]>
+		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+		<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+		<![endif]-->
+		<script src="js/amazeui.min.js"></script>
+
+		<!--飞机票预定js-->
+		<script type="text/javascript">
+			$(function() {
+				var nowTemp = new Date();
+				var nowDay = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0).valueOf();
+				var nowMoth = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), 1, 0, 0, 0, 0).valueOf();
+				var nowYear = new Date(nowTemp.getFullYear(), 0, 1, 0, 0, 0, 0).valueOf();
+				var $myStart2 = $('#my-start-2');
+
+				var checkin = $myStart2.datepicker({
+					onRender: function(date, viewMode) {
+						// 默认 days 视图，与当前日期比较
+						var viewDate = nowDay;
+
+						switch(viewMode) {
+							// moths 视图，与当前月份比较
+							case 1:
+								viewDate = nowMoth;
+								break;
+								// years 视图，与当前年份比较
+							case 2:
+								viewDate = nowYear;
+								break;
+						}
+
+						return date.valueOf() < viewDate ? 'am-disabled' : '';
+					}
+				}).on('changeDate.datepicker.amui', function(ev) {
+					if(ev.date.valueOf() > checkout.date.valueOf()) {
+						var newDate = new Date(ev.date)
+						newDate.setDate(newDate.getDate() + 1);
+						checkout.setValue(newDate);
+					}
+					checkin.close();
+					$('#my-end-2')[0].focus();
+				}).data('amui.datepicker');
+
+				//把当天的时间赋值给起始选择框
+				checkin.setValue(nowTemp);
+
+				var checkout = $('#my-end-2').datepicker({
+					onRender: function(date, viewMode) {
+						var inTime = checkin.date;
+						var inDay = inTime.valueOf();
+						var inMoth = new Date(inTime.getFullYear(), inTime.getMonth(), 1, 0, 0, 0, 0).valueOf();
+						var inYear = new Date(inTime.getFullYear(), 0, 1, 0, 0, 0, 0).valueOf();
+
+						// 默认 days 视图，与当前日期比较
+						var viewDate = inDay;
+
+						switch(viewMode) {
+							// moths 视图，与当前月份比较
+							case 1:
+								viewDate = inMoth;
+								break;
+								// years 视图，与当前年份比较
+							case 2:
+								viewDate = inYear;
+								break;
+						}
+
+						return date.valueOf() <= viewDate ? 'am-disabled' : '';
+					}
+				}).on('changeDate.datepicker.amui', function(ev) {
+					checkout.close();
+				}).data('amui.datepicker');
+			});
+		</script>
+		<script type="text/javascript">
+			//js放在中间时不用放这句话，意思是等待加载完
+			//			$(document).ready(function(){
+			//			})
+			$('#accordion').on('open.collapse.amui', function(e) {
+				$(e.target).find('.am-panel-bd').fadeIn(3000);
+			}).on('close.collapse.amui', function(e) {
+				$(e.target).find('.am-panel-bd').fadeOut();
+			});
+		</script>
+
+		<script type="text/javascript">
+			$('#doc-confirm-toggle').click(function() {
+				$('#my-confirm').modal({
+					closeOnConfirm: false,
+					onConfirm: function() {
+						setTimeout(function() {
+							$('#my-confirm').modal('close')
+						}, 2000)
+					}
+				})
+			})
+		</script>
+
+		<!--表单验证-->
+		<form action="" class="am-form" id="doc-vld-msg">
+			<fieldset>
+				<legend>显示验证提示信息</legend>
+				<div class="am-form-group">
+					<label for="doc-vld-name-2-1">用户名：</label>
+					<input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-vld-email-2-1">邮箱：</label>
+					<input type="email" id="doc-vld-email-2-1" data-validation-message="自定义提示信息：输入地球上的电子邮箱撒" placeholder="输入邮箱" required/>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-vld-url-2-1">网址：</label>
+					<input type="url" id="doc-vld-url-2-1" placeholder="输入网址" required/>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-vld-age-2-1">年龄：</label>
+					<input type="number" class="" id="doc-vld-age-2-1" placeholder="输入年龄  18-120" min="18" max="120" required />
+				</div>
+
+				<div class="am-form-group">
+					<label class="am-form-label">爱好：</label>
+					<label class="am-checkbox-inline">
+        <input type="checkbox" value="橘子" name="docVlCb" minchecked="2" maxchecked="4" required> 橘子
+      </label>
+					<label class="am-checkbox-inline">
+        <input type="checkbox" value="苹果" name="docVlCb"> 苹果
+      </label>
+					<label class="am-checkbox-inline">
+        <input type="checkbox" value="菠萝" name="docVlCb"> 菠萝
+      </label>
+					<label class="am-checkbox-inline">
+        <input type="checkbox" value="芒果" name="docVlCb"> 芒果
+      </label>
+					<label class="am-checkbox-inline">
+        <input type="checkbox" value="香蕉" name="docVlCb"> 香蕉
+      </label>
+				</div>
+
+				<div class="am-form-group">
+					<label>性别： </label>
+					<label class="am-radio-inline">
+        <input type="radio"  value="" name="docVlGender" required> 男
+      </label>
+					<label class="am-radio-inline">
+        <input type="radio" name="docVlGender"> 女
+      </label>
+					<label class="am-radio-inline">
+        <input type="radio" name="docVlGender"> 其他
+      </label>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-select-1-1">下拉单选框</label>
+					<select id="doc-select-1-1" required>
+						<option value="">-=请选择一项=-</option>
+						<option value="option1">选项一...</option>
+						<option value="option2">选项二.....</option>
+						<option value="option3">选项三........</option>
+					</select>
+					<span class="am-form-caret"></span>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-select-2-1">多选框</label>
+					<select multiple class="" id="doc-select-2-1" minchecked="2" maxchecked="4">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-vld-ta-2-1">评论：</label>
+					<textarea id="doc-vld-ta-2-1" minlength="10" maxlength="100"></textarea>
+				</div>
+
+				<button class="am-btn am-btn-secondary" type="submit">提交</button>
+			</fieldset>
+		</form>
+
+		<script type="text/javascript">
+			$(function() {
+				$('#doc-vld-msg').validator({
+					onValid: function(validity) {
+						$(validity.field).closest('.am-form-group').find('.am-alert').hide();
+					},
+
+					onInValid: function(validity) {
+						var $field = $(validity.field);
+						var $group = $field.closest('.am-form-group');
+						var $alert = $group.find('.am-alert');
+						// 使用自定义的提示信息 或 插件内置的提示信息
+						var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+
+						if(!$alert.length) {
+							$alert = $('<div class="am-alert am-alert-danger"></div>').hide().
+							appendTo($group);
+						}
+
+						$alert.html(msg).show();
+					}
+				});
+			});
+		</script>
+
+		c
+		<form action="" class="am-form" data-am-validator>
+			<fieldset>
+				<legend>JS 表单验证</legend>
+				<div class="am-form-group">
+					<label for="doc-vld-name-2">手机号</label>
+					<input type="text" id="doc-vld-name-2" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-vld-email-2">邮箱：</label>
+					<input type="email" id="doc-vld-email-2" placeholder="输入邮箱" required/>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-vld-url-2">网址：</label>
+					<input type="url" id="doc-vld-url-2" placeholder="输入网址" required/>
+				</div>
+
+				<div class="am-form-group">
+					<label for="doc-vld-age-2">年龄：</label>
+					<input type="number" class="" id="doc-vld-age-2" placeholder="输入年龄  18-120" min="18" max="120" required />
+				</div>
+				<button class="am-btn am-btn-secondary" type="submit">提交</button>
+			</fieldset>
+		</form>
+	</body>
+	
+	
+	<!--当不用submit用bt验证-->
+	<script type="text/javascript">
+		var $from=$('from');
+		$('#btn').click(function(){
+			//表单验证
+			var flag=$from.validator('isFormValid');
+			console.log(flag)
+			//表单序列化
+			if(flag){
+				var data=$from.serialize();
+			}else{
+				
+			}
+		})
+		
+		
+	</script>
+
+</html>

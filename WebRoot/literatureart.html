@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="AmazeUI/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/amazeui.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/literatureart.css" />
+		<link rel="stylesheet" type="text/css" href="css/foot.css" />
+		<title>文艺</title>
+	</head>
+
+	<body>
+		<div class="cuntent">
+			<div class="top width_full am-cf am-padding-top-sm">
+				<div class="logo am-text-middle am-fl">
+					<em><img style="width: 25px; height: 25px;" src="img/logo.png"/></em>
+					<span class="fontsize-15 am-text-middle">鲜书</span>
+				</div>
+				<div class="selected am-text-center am-fl">
+					<a href="select.html">
+						<em></em>
+						<input type="text" name="" id="" value="" placeholder="搜索好书" />
+					</a>
+				</div>
+			</div>
+			<!--导航栏-->
+			<ul class="list am-cf am-center">
+				<li class="list1 am-fl">
+					<a href="index.html" class="">推荐</a>
+				</li>
+				<li class="list2 am-fl">
+					<a href="#" class="color-r">文艺</a>
+				</li>
+				<li class="list3 am-fl">
+					<a href="booklist.html">书单</a>
+				</li>
+				<li class="list4 am-fl">
+					<a href="eatfood.html">谈吃</a>
+				</li>
+			</ul>
+			<!--以上是头部-->
+			<!--文艺的主体部分-->
+			<div class="banner2">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/banner2.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/wenyibanner1.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/wenyibanner2.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/shouyebanner-4.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/shouyebanner-5.jpg" /></a>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--轮播图的js-->
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						spaceBetween: 30,
+					});
+				</script>
+			</div>
+			<!--文学部分-->
+			<div class="wenxue">
+				<div class="text-top am-text-center">
+					<h3>文学</h3>
+					<span>文&nbsp;·&nbsp;传&nbsp;·&nbsp;诗&nbsp;·&nbsp;剧</span>
+				</div>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+					<li class="">
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail">
+								<img class="" src="img/atail.jpg" />
+							</div>
+							<p>阿勒泰的角落</p>
+							<span class="color-r">¥30.80</span>
+							<del>￥36.00</del>
+						</a>
+					</li>
+					<li>
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail">
+								<img class="" src="img/shashibiya.jpg" />
+							</div>
+							<p>莎士比亚戏剧故事</p>
+							<span class="color-r">¥27.10</span>
+							<del>￥35.00</del>
+						</a>
+					</li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+					<li class="">
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail">
+								<img class="" src="img/yangjiang.jpg" />
+							</div>
+							<p>生命的烤火者：杨绛传</p>
+							<span class="color-r">¥23.00</span>
+							<del>￥32.00</del>
+						</a>
+					</li>
+					<li>
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail">
+								<img class="" src="img/songci.jpg" />
+							</div>
+							<p>宋词背后的秘密</p>
+							<span class="color-r">¥27.10</span>
+							<del>￥36.00</del>
+						</a>
+					</li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+					<li class="">
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail">
+								<img class="" src="img/jiye.jpg" />
+							</div>
+							<p>厚积落叶听雨声</p>
+							<span class="color-r">¥28.70</span>
+							<del>￥38.90</del>
+						</a>
+					</li>
+					<li class="moer am-text-center">
+						<a href="detailpage2.html">
+							<h2 class="color-b">更多文学书籍</h3>
+						<em></em>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c"></p>
+			</div>
+			<!--艺术-->
+				<div class="wenxue">
+				<div class="text-top am-text-center">
+					<h3>艺术</h3>
+					<span>话&nbsp;·&nbsp;乐&nbsp;·&nbsp;匠&nbsp;·&nbsp;影</span>
+				</div>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/yifuhua.jpg" />
+						</div>
+						<p>一幅画开启的世界</p>
+						<span class="color-r">¥51.80</span>
+						<del>￥69.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/shoujisheying.jpg" />
+						</div>
+						<p>手机摄影大全——轻松拍…</p>
+						<span class="color-r">¥29.10</span>
+						<del>￥39.00</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/sheji.jpg" />
+						</div>
+						<p>设计的准则</p>
+						<span class="color-r">¥51.00</span>
+						<del>￥68.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/lu.jpg" />
+						</div>
+						<p>隐世之国 鹿菏水彩私享绘</p>
+						<span class="color-r">¥37.40</span>
+						<del>￥59.80</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/zaowu.jpg" />
+						</div>
+						<p>造物有灵且美</p>
+						<span class="color-r">¥39.90</span>
+						<del>￥56.00</del>
+				  	</a>
+				  </li>
+				  <li class="moer am-text-center">
+					<a href="detailpage2.html">
+						<h2 class="color-b">更多艺术书籍</h3>
+						<em></em>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c"></p>
+			</div>
+			<!--小说-->
+			<div class="wenxue">
+				<div class="text-top am-text-center">
+					<h3>小说</h3>
+					<span>世界最短武侠小说：高手被豆腐砸死了</span>
+				</div>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/fusheng.jpg" />
+						</div>
+						<p>浮生寄流年</p>
+						<span class="color-r">¥24.80</span>
+						<del>￥32.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/congnidequanshijie.jpg" />
+						</div>
+						<p>从你的全世界路过（精装）</p>
+						<span class="color-r">¥49.70</span>
+						<del>￥68.00</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/jieyou.jpg" />
+						</div>
+						<p>解忧杂货铺</p>
+						<span class="color-r">¥27.30</span>
+						<del>￥39.50</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail">
+				  			<img class="" src="img/xianyiren.jpg" />
+						</div>
+						<p>嫌疑人X的献身</p>
+						<span class="color-r">¥29.40</span>
+						<del>￥35.00</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail">
+				  			<img class="" src="img/wangxiaobo.jpg" />
+						</div>
+						<p>王小波时代三部曲</p>
+						<span class="color-r">¥82.90</span>
+						<del>￥119.00</del>
+				  	</a>
+				  </li>
+				  <li class="moer am-text-center">
+					<a href="detailpage2.html">
+						<h2 class="color-b">更多小说</h3>
+						<em></em>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c"></p>
+			</div>
+			<!--生活-->
+			<div class="wenxue">
+				<div class="text-top am-text-center">
+					<h3>生活</h3>
+					<span>一期一会&nbsp;·&nbsp;期刊</span>
+				</div>
+				<div class="am-g border-bottom-d  am-padding">
+				 <a href="detailpage2.html">
+				 	 <div class="am-u-sm-4">
+				  		<img src="img/hua.jpg"/>
+				  	</div>
+				  <div class="am-u-sm-8 magazine">
+				  	<h4 class="color-b am-text-center">《Lens目客001：花朵与我》</h4>
+				  	<p>“如果一个人专心致志地瞧一朵花，一块石头，一棵树，草地，白雪，一片浮云，这时启迪性的事物便会发生。” Lens编著的《目客（花朵与我）》便是我们与花朵未曾言说的美丽故事。</p>
+				  	<span class="color-6">2016/10/12</span>
+				  </div>
+				 </a>
+				</div>
+				<div class="am-g border-bottom-d  am-padding">
+				 <a href="detailpage2.html">
+				 	 <div class="am-u-sm-4">
+				  		<img src="img/360.jpg"/>
+				  	</div>
+				  <div class="am-u-sm-8 magazine">
+				  	<h4 class="color-b am-text-center">《Design360° 观念与设计杂志》</h4>
+				  	<p>摄影作為一种记录的方式捕捉了许多瞬间，观察到了世界的转变，若将这每个瞬间看做一个平面正方形，那当它们被设计师用到恰当的设计上时，便形成了一个正方体。</p>
+				  	<span class="color-6">2016/10/12</span>
+				  </div>
+				 </a>
+				</div>
+				<div class="am-g border-bottom-d  am-padding">
+				 <a href="detailpage2.html">
+				 	 <div class="am-u-sm-4">
+				  		<img src="img/lens.jpg"/>
+				  	</div>
+				  <div class="am-u-sm-8 magazine">
+				  	<h4 class="color-b am-text-center">《Lens视觉004：需要什么年轻的身体便去找寻》</h4>
+				  	<p>“想进入诗意的生活，为此他必须穿过生活的诗意” 《Lens·视觉004：需要什么，年轻的身体便去找寻》包含了两组浪漫与现实并行</p>
+				  	<span class="color-6">2016/10/12</span>
+				  </div>
+				 </a>
+				</div>
+			</div>
+			
+			<!--底部-->
+			<ul class="footer am-cf  am-text-center">
+				<li class="footer1 footerlist color-r">
+					<span class="am-icon-home am-icon-md"></span>
+					<em>首页</em>
+				</li>
+				<li class="footer2 footerlist">
+					<a href="Life.html">
+						<span class="am-icon-yelp am-icon-md"></span>
+						<em>Life</em>
+					</a>
+				</li>
+				<li class="footer3 footerlist">
+					<a href="classify.html">
+						<span class="am-icon-lemon-o am-icon-md"></span>
+						<em>分类</em>
+					</a>
+				</li>
+				<li class="footer4 footerlist">
+					<a href="shopingcar.html">
+						<span class="am-icon-shopping-cart am-icon-md"></span>
+						<em>购物车</em>
+					</a>
+				</li>
+				<li class="footer5 footerlist">
+					<a href="register.html">
+						<span class="am-icon-user am-icon-md"></span>
+						<em>个人</em>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

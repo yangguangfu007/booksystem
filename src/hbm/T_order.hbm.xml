@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+    <class name="T_order" table="T_ORDER">
+       <id name="orderid" column="ORDERID" type="java.lang.Integer">
+       		<generator class="sequence">
+       			<param name="sequence">SEQ_T_ORDER_ID</param>
+       		</generator>
+       </id>
+       <property name="name" column="NAME" type="java.lang.String"/>
+       <property name="phone" column="PHONE" type="java.lang.String"/>
+        <property name="address" column="ADDRESS" type="java.lang.String"/>
+      	<many-to-one name="user" column="USERID" class="User">
+      	</many-to-one>
+      	<set name="details" cascade="all" inverse="true">
+      	<key column="ORDERID"></key>
+      	<one-to-many class="Order_Detail" />
+      	</set>
+    </class>
+</hibernate-mapping>

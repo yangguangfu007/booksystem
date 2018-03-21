@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url("jquery.skidder.css");
+.list3 {
+	padding-bottom: 10px;
+	border-bottom: 3px solid #cc0000;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+}
+
+.banner3 {
+	width: 100%;
+}
+
+.fontsize-15 {
+	font-size: 15px;
+}
+
+.banner3 img {
+	width: 100%;
+}
+
+.tuijian {
+	padding: 20px 0 15px 0;
+}
+
+.tuijian h1 {
+	font-size: 18px;
+}
+
+.tuijian span {
+	font-size: 14px;
+}
+
+
+/*轮播css*/
+
+.swiper-container {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.swiper-wrapper{
+	width: 100%;
+}
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 40%;
+	height: 250px;
+}
+.swiper-slide span{
+	margin-bottom: 0;
+}
+/*详情页的css*/
+
+
+/*top*/
+
+.hot-top {
+	padding: 15px 0 15px 0;
+}
+
+.return {
+	margin-left: 15px;
+}
+
+.hot-top-titile {
+	font-weight: normal;
+	width: 80%;
+}
+
+.bag-c {
+	background: #ededed;
+}
+
+.width_80 {
+	margin: 0 auto;
+}
+
+.suojin {
+	text-indent: 2em;
+}
+
+.color-7 {
+	color: #777;
+}
+
+.width_90 {
+	width: 90%;
+}
+
+.width_60 {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.width_60 img {
+	width: 100%;
+}

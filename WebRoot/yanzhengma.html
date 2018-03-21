@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="AmazeUI/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/amazeui.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/landing.css" />
+		<title>验证码</title>
+	</head>
+
+	<body>
+		<div class="cuntent  am-text-center padding-top">
+			<div class="top am-center"></div>
+			<!--密码验证-->
+			<div class="yanzheng am-padding zhuce">
+				<form action="" class="am-form" data-am-validator>
+					<fieldset>
+						<div class="am-form-group am-padding-horizontal">
+							<input type="number" class="" id="doc-vld-age-2-1" placeholder="请输入收到的验证码" min="1000" max="9999" required />
+						</div>
+
+						<div class="am-form-group am-padding-horizontal">
+							<input type="password" id="doc-vld-pwd-1" placeholder="请设置6位数密码" pattern="^\d{6}$" required/>
+						</div>
+
+						<div class="am-form-group am-padding-horizontal">
+							<input type="password" id="doc-vld-pwd-2" placeholder="确认密码" data-equal-to="#doc-vld-pwd-1" required/>
+						</div>
+						<div class="am-padding am-margin">
+								<em class="xiayibu am-center"></em>
+								
+								<span class="color-f am-margin-vertical-sm">提交</span>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<title>欢迎页</title>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				color: black;
+				text-decoration: none;
+			}
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.swiper-slide img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.postion {
+				position: relative;
+			}
+			
+			.postion1 {
+				text-align: center;
+				position: absolute;
+				bottom: 30px;
+			}
+			
+			.font-size-24 {
+				font-weight: normal;
+				font-size: 20px;
+			}
+			
+			.logo {
+				margin-left: 20px;
+				display: block;
+				width: 50px;
+				height: 50px;
+				background: url(img/logo.png)no-repeat;
+				background-size: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/welcome1.jpg" /></div>
+				<div class="swiper-slide"><img src="img/welcome2.jpg" /></div>
+				<div class="swiper-slide"><img src="img/welcome3.jpg" /></div>
+				<div class="swiper-slide postion"><img src="img/welcome-4.jpg" />
+					<div class="postion1">
+						<a href="index.html">
+							<h3 class="font-size-24">鲜书APP</h3>
+							<em class="logo"></em>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="AmazeUI/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/amazeui.min.css" />
+		<link rel="stylesheet" type="text/css" href="AmazeUI/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/literatureart.css" />
+		<link rel="stylesheet" type="text/css" href="css/foot.css" />
+		<title>谈吃</title>
+	</head>
+
+	<body>
+		<div class="cuntent">
+			<div class="top width_full am-cf am-padding-top-sm">
+				<div class="logo am-text-middle am-fl">
+					<em><img style="width: 25px; height: 25px;" src="img/logo.png"/></em>
+					<span class="fontsize-15 am-text-middle">鲜书</span>
+				</div>
+				<div class="selected am-text-center am-fl">
+					<a href="select.html">
+						<em></em>
+						<input type="text" name="" id="" value="" placeholder="搜索好书" />
+					</a>
+				</div>
+			</div>
+			<!--导航栏-->
+			<ul class="list am-cf am-center">
+				<li class="list1 am-fl">
+					<a href="index.html" class="">推荐</a>
+				</li>
+				<li class=" am-fl">
+					<a href="literatureart.html" class="">文艺</a>
+				</li>
+				<li class=" am-fl">
+					<a href="booklist.html">书单</a>
+				</li>
+				<li class="list2 am-fl">
+					<a href="#" class="color-r">谈吃</a>
+				</li>
+			</ul>
+			<!--以上是头部-->
+			<!--文艺的主体部分-->
+			<!--bnner轮播-->
+			<div class="banner2">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/foodbanner.jpg"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/foodbanner2.jpg"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/foodbanner4.jpg"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/foodbanner3.jpg"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="detailpage2.html"><img src="img/foodbanner5.jpg"/></a>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						slidesPerView: 1,
+						paginationClickable: true,
+						spaceBetween: 30,
+						loop: true
+					});
+				</script>
+			</div>
+			<!--文学部分-->
+			<div class="wenxue">
+				<div class="text-top am-text-center">
+					<h3>吃在故乡·鲜果干果</h3>
+					<span>原产地直接供应，来自它们的故乡</span>
+				</div>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+					<li class="">
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail am-padding-top">
+								<img class="" src="img/f1.jpg" />
+							</div>
+							<p>冻干混合水果脆 25g</p>
+							<span class="color-r">¥12.80</span>
+							<del>￥18.00</del>
+						</a>
+					</li>
+					<li>
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail  am-padding-top">
+								<img class="" src="img/f2.jpg" />
+							</div>
+							<p>阳光葵花子 110g</p>
+							<span class="color-r">¥12.80</span>
+							<del>￥18.00</del>
+						</a>
+					</li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+					<li class="">
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail   am-padding-top">
+								<img class="" src="img/f3.jpg" />
+							</div>
+							<p>夏威夷果仁 120g</p>
+							<span class="color-r">￥35.80</span>
+							<del>￥38.00</del>
+						</a>
+					</li>
+					<li>
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail am-padding-top">
+								<img class="" src="img/f4.jpg" />
+							</div>
+							<p>夏威夷果 150g</p>
+							<span class="color-r">¥25.10</span>
+							<del>￥36.00</del>
+						</a>
+					</li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+					<li class="">
+						<a href="detailpage2.html">
+							<div class="img-h am-thumbnail am-padding-top">
+								<img class="" src="img/f5.jpg" />
+							</div>
+							<p>纯臻南瓜子 160g</p>
+							<span class="color-r">¥12.00</span>
+							<del>￥16.00</del>
+						</a>
+					</li>
+					<li class="moer am-text-center">
+						<a href="detailpage2.html">
+							<h2 class="color-b">更多鲜果干果</h3>
+						<em></em>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c"></p>
+			</div>
+			<!--艺术-->
+				<div class="wenxue">
+				<div class="text-top am-text-center">
+					<h3>吃在四方·糕点小食</h3>
+					<span>四季茶食细点，天然原料，来自山川湖海</span>
+				</div>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f21.jpg" />
+						</div>
+						<p>星云酥 180g/3颗</p>
+						<span class="color-r">¥26.80</span>
+						<del>￥28.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f22.jpg" />
+						</div>
+						<p>黄金脆千层 140g</p>
+						<span class="color-r">¥2.10</span>
+						<del>￥28.00</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f23.jpg" />
+						</div>
+						<p>美式软曲奇（蔓越莓）</p>
+						<span class="color-r">¥18.00</span>
+						<del>￥24.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f24.jpg" />
+						</div>
+						<p>蔓越莓曲奇 110g</p>
+						<span class="color-r">¥16.40</span>
+						<del>￥24.80</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f25.jpg" />
+						</div>
+						<p>蓝莓曲奇 110g</p>
+						<span class="color-r">¥16.90</span>
+						<del>￥24.00</del>
+				  	</a>
+				  </li>
+				  <li class="moer am-text-center am-padding-top">
+					<a href="detailpage2.html">
+						<h2 class="color-b">更多糕点小食</h3>
+						<em></em>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c"></p>
+			</div>
+			<!--小说-->
+			<div class="wenxue">
+				<div class="text-top am-text-center">
+					<h3>吃东道西·进口美食</h3>
+					<span>吃在东方，取道于西</span>
+				</div>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f31.jpg" />
+						</div>
+						<p>澳洲无油薯条脆</p>
+						<span class="color-r">¥7.80</span>
+						<del>￥10.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f32.jpg" />
+						</div>
+						<p>泰国冻干榴莲干 40g</p>
+						<span class="color-r">¥13.70</span>
+						<del>￥20.00</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f33.jpg" />
+						</div>
+						<p>进口果蔬脆 70g</p>
+						<span class="color-r">¥19.30</span>
+						<del>￥20.00</del>
+				  	</a>
+				  </li>
+				  <li>
+					<a href="detailpage2.html">
+						<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f34.jpg" />
+						</div>
+						<p>进口蔬菜脆 70g</p>
+						<span class="color-r">¥19.40</span>
+						<del>￥20.00</del>
+					</a>
+				  </li>
+				</ul>
+				<ul class="am-avg-sm-2 am-thumbnails new-book-list am-text-center border-bottom-d">
+				  <li class="">
+				  	<a href="detailpage2.html">
+				  		<div class="img-h am-thumbnail am-padding-top">
+				  			<img class="" src="img/f35.jpg" />
+						</div>
+						<p>美国车厘子干 148g</p>
+						<span class="color-r">¥38.00</span>
+						<del>¥40.00</del>
+				  	</a>
+				  </li>
+				  <li class="moer am-text-center">
+					<a href="">
+						<h2 class="color-b">更多进口美食</h3>
+						<em></em>
+					</a>
+				  </li>
+				</ul>
+				<p class="bag-c"></p>
+			</div>
+			
+			<!--底部-->
+			<ul class="footer am-cf  am-text-center">
+				<li class="footer1 footerlist color-r">
+					<span class="am-icon-home am-icon-md"></span>
+					<em>首页</em>
+				</li>
+				<li class="footer2 footerlist">
+					<a href="Life.html">
+						<span class="am-icon-yelp am-icon-md"></span>
+						<em>Life</em>
+					</a>
+				</li>
+				<li class="footer3 footerlist">
+					<a href="classify.html">
+						<span class="am-icon-lemon-o am-icon-md"></span>
+						<em>分类</em>
+					</a>
+				</li>
+				<li class="footer4 footerlist">
+					<a href="shopingcar.html">
+						<span class="am-icon-shopping-cart am-icon-md"></span>
+						<em>购物车</em>
+					</a>
+				</li>
+				<li class="footer5 footerlist">
+					<a href="register.html">
+						<span class="am-icon-user am-icon-md"></span>
+						<em>个人</em>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

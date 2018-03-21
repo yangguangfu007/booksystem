@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+	<class name="Order_Detail" table="ORDER_DETAIL">
+		<id name="id" column="ID" type="java.lang.Integer">
+			<generator class="sequence">
+				<param name="sequence">SEQ_ORDER_DETAIL_ID</param>
+			</generator>
+		</id>
+		<property name="name" column="SHOPPINGNAME" type="java.lang.String" />
+		<property name="num" column="SHOPPINGNUM" type="java.lang.Integer" />
+		<property name="price" column="SHOPPINGPRICE" type="java.lang.Double"/>
+		<property name="amount" column="AMOUNT" type="java.lang.Double"/>
+		<many-to-one name="order" column="ORDERID" class="T_order">
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

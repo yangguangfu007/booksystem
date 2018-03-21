@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+
+
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="message"></constant>
+	<package name="booksystem" extends="struts-default" >
+		<!--用户注册  -->
+		<action name="UserAction_register" class="action.UserAction" method="register">
+			<result name="success">/landing1.jsp</result>
+			<result name="fail">/register.html</result>
+			<result name="input">/register.html</result>
+		</action>
+		<!--用户登录  -->
+		<action name="UserAction_login" class="action.UserAction" method="login">
+			<result name="success">/personalcenter.jsp</result>
+			<result name="fail">/landing1.jsp</result>
+		</action>
+		<!--注销登录  -->
+		<action name="UserAction_exitLogin" class="action.UserAction" method="exitLogin">
+			<result name="success" type="redirectAction" >index</result>
+		</action>
+		<!--查找所有书跳转到首页  -->
+		<action name="index" class="action.BookAction" method="showAllBookByFenYe">
+			<param name="size">30</param>
+			<result name="success">/index.jsp</result>
+			<result name="login">/index.jsp</result>
+		</action>
+		
+		<!--条件查找所有书跳转到分类页 -->
+		<action name="findAllBookFromType" class="action.BookAction" method="findAllBook">
+			<result name="success">/classify.jsp</result>
+			<result name="fail">/classify.jsp</result>
+		</action>
+		  
+		  
+		<!--查找一件商品，跳到显示商品信息详情  -->
+		<action name="showBookDetail" class="action.BookAction" method="findOneBook">
+			<result name="success">/detailpage.jsp</result>
+		</action>
+		<!--添加商品到购物车 -->
+		<action name="addToCart" class="action.BookAction" method="addToCart">
+			<result name="success">/addSuccess.jsp</result>
+		</action>
+		<!--从购物车取商品，并跳转到页面显示 -->
+		<action name="showCart" class="action.BookAction" method="showCart">
+			<result name="success">/showCart.jsp</result>
+			<result name="fail">/showCartFail.jsp</result>
+		</action>
+		<!--ajax请求，修改商品数量-->
+		<action name="BookAction_upateCart" class="action.BookAction" method="upateCart">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+　　　　			<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		<!--用于用户结算时验证用户是后登录  -->
+		<action name="Usercheck" class="action.UserAction" method="Usercheck">
+			<result name="success">/order.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<!-- 用户为未登录时，调用此方法登录，登录成功跳转到订单页面 -->
+		<action name="UserAction_login1" class="action.UserAction" method="login1">
+			<result name="success">/order.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<!--处理提交的订单  -->
+		<action name="orderSubmit" class="action.OrderAction" method="orderSubmit">
+			<result name="success">/orderSubmitSuccess.jsp</result>
+			<result name="fail">/orderSubmitfail.jsp</result>
+			<result name="input">/order.jsp</result>
+		</action>
+		<!--查找用户订单  -->
+		<action name="OrderAction_findOrder" class="action.OrderAction" method="findOrder">
+			<result name="success">/showOrder.jsp</result>
+			<result name="fail">/findOrderfail.jsp</result>
+		</action>
+		<!-- 查找所有订单 -->
+		<action name="OrderAction_findOrder1" class="action.OrderAction" method="findOrder1">
+			<result name="success">/showOrder.jsp</result>
+			<result name="fail">/findOrderfail.jsp</result>
+		</action>
+		<!--显示订单详情  -->
+		<action name="OrderAction_findOrderDetail" class="action.OrderAction" method="findOrderDetail">
+			<result name="success">/showOrderDetail.jsp</result>
+		</action>
+		<!--管理员添加一件商品 -->
+		<action name="BookAction_addBook" class="action.BookAction" method="addBook">
+			<param name="dir">/image</param>
+			<result name="success" type="chain">index</result>
+			<result name="input">/addBook.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+	<class name="Book" table="BOOK">
+		<id name="bid" column="BID" type="java.lang.Integer">
+			<generator class="sequence">
+				<param name="sequence">seq_book_id</param>
+			</generator>
+		</id>
+		<property name="bname" column="bname" type="java.lang.String" />
+		<property name="bauthor" column="bauthor" type="java.lang.String" />
+		<property name="bbrief" column="bbrief" type="java.lang.String" />
+		<property name="bnum" type="java.lang.Integer"></property>
+		<property name="bprice" type="java.lang.Double"></property>
+		<property name="price" type="java.lang.Double"></property>
+		<property name="bdate" type="java.util.Date"></property>
+		<property name="num" type="java.lang.Integer"></property>
+		<property name="type" type="java.lang.Integer"></property>
+		<property name="isRecommend" type="java.lang.Integer"></property>
+		<property name="url" column="URL" type="java.lang.String" />
+	</class>
+</hibernate-mapping>
